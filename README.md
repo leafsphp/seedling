@@ -56,12 +56,12 @@ You can create your own commands by using the `g:command` command. For example, 
 php leaf g:command greet
 ```
 
-This will create a new command in the `app/commands` directory as `GreetCommand.php`, which will have some boilerplate code to get you started.
+This will create a new command in the `app/console` directory as `GreetCommand.php`, which will have some boilerplate code to get you started.
 
 ```php
 <?php
 
-namespace App\Commands;
+namespace App\Console;
 
 use Leaf\Sprout\Command;
 
