@@ -1,0 +1,15 @@
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = sprout()->createApp([
+    'name' => 'Sprout',
+    'autoload' => __DIR__ . '/app/commands',
+    'version' => sprout()->composer()->version() ?? '0.1.0',
+]);
+
+$app->register(
+    \Leaf\Sprout\Seedling::commands()
+);
+
+$app->run();

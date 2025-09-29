@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists(dirname(__DIR__, 4) . '/vendor/autoload.php')) {
+    require dirname(__DIR__, 4) . '/vendor/autoload.php';
+} else {
+    require dirname(__DIR__) . '/vendor/autoload.php';
+}
+
+sprout()->createApp([
+    'name' => 'Sprout',
+    'autorun' => true,
+    'autoload' => __DIR__ . '/../app/commands',
+    'version' => sprout()->composer()->version() ?? '0.1.0',
+]);
