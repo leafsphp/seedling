@@ -23,7 +23,7 @@
     ],
     "require": {
         "leafs/fs": "*",
-        "leafs/sprout": "^0.8.0"
+        "leafs/sprout": "*"
     },
     "bin": [
         "bin/sprout"
