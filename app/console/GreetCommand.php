@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Commands;
+namespace App\Console;
 
 use Leaf\Sprout\Command;
 
 class GreetCommand extends Command
 {
     protected $signature = 'greet
-        {name : The name of the person}
+        {name=everyone : The name of the person}
         {--greeting=Hello : The greeting to use}';
     protected $description = 'An example command that greets a person with a specified greeting';
     protected $help = 'This command allows you to greet a person with a custom greeting.';
