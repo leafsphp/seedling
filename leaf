@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $app = sprout()->createApp([
     'name' => 'Sprout',
-    'autoload' => __DIR__ . '/app/commands',
+    'autoload' => __DIR__ . '/app/console',
     'version' => sprout()->composer()->version() ?? '0.1.0',
 ]);
 
