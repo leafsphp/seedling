@@ -8,8 +8,9 @@ $app = sprout()->createApp([
     'version' => sprout()->composer()->version() ?? '0.1.0',
 ]);
 
-$app->register(
-    \Leaf\Sprout\Seedling::commands()
-);
+$app->register([
+    \Leaf\Sprout\Seedling::commands(),
+    \Leaf\Sprout\Seedling::moduleCommands()
+]);
 
 $app->run();
